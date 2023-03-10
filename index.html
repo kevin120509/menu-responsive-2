@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tarea4</title>
+  <link rel="stylesheet" href="tarea4.css">
+  <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+  <i id="subir" class="fa-solid fa-circle-arrow-up"></i>
+
+
+
+
+
+
+
+  <header class="contenedor_logo ancho">
+    <figure>
+      <img src="imagenes/logo_tec.png" alt="logo del tecnologigo de merida">
+    </figure>
+    <br>
+  </header>
+  <div class="todo">
+    <div class="contenedor_boton">
+      <a href="#" id="iconomenu"><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <nav id="contenedor_menu">
+      <a href="#" class="btn_ancla">INICIO</a>
+      <a href="#servicios" class="btn_ancla">SERVICIO</a>
+      <a href="#¿como_comprar?" class="btn_ancla">¿COMO COMPRAR?</a>
+      <a href="#ubicacion" class="btn_ancla">UBICACION</a>
+      <a href="#contactanos" class="btn_ancla">CONTACTANOS</a>
+    </nav>
+  </div>
+   
+
+    <section class="contenedor_texto">
+      <a name="servicios"></a>
+      <h2>SERVICIOS</h2>
+      <div class="fondo_texto">
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+      </div>
+     
+    </section>
+    <section class="contenedor_texto">
+      <a name="¿como_comprar?"></a>
+      <h2>¿COMO COMPRAR?</h2>
+      <div class="fondo_texto">
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+      </div>
+     
+    </section>
+    <section class="contenedor_texto">
+      <a name="ubicacion"></a>
+      <h2>UBICACION</h2>
+      <div class="fondo_texto">
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+      </div>
+     
+    </section>
+    <section class="contenedor_texto">
+      <a name="contactanos"></a>
+      <h2>CONTACTANOS</h2>
+      <div class="fondo_texto">
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+        <article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, molestiae adipisci veritatis sunt amet quos eius tempore animi cupiditate fugiat. Similique temporibus eum fuga aspernatur officia molestias sunt neque?</p>
+        </article>
+      </div>
+     
+    </section>
+    <br><br><br><br><br>
+    <footer>
+<a href="mailto:kevin.36137@gmail.com">@kevin vargas</a>
+    </footer>
+   
+
+    <!-- <script>
+      $('#iconomenu').click(function () {
+       $('nav').slideToggle()
+      })
+     </script> -->
+    
+    <script>
+      $('#iconomenu').click(function (){
+        $("#contenedor_menu").toggleClass("abrirmenu");
+      });
+  
+  // Funcion para desplazamiento de los vinculos
+  $(".btn_ancla").click(function () {
+    var ancla = $(this).attr("href");
+    $("html,body").animate(
+      {
+        scrollTop: $(ancla).offset().top,
+      },
+      1000
+    );
+    $("#contenedormenu").toggleClass("abrirmenu");
+  });
+ // Funcion para el boton subir
+    $("#subir").click(function () {
+      $("html,body").animate(
+        {
+          scrollTop: "0px",
+        },
+        900
+      );
+    });
+
+</script>
+</body>
+</html>

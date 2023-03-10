@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+#subir{
+   font-size: 40px;
+  position: fixed;
+  z-index: 30;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+.contenedor_logo{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.contenedor_logo figure img{
+  width: 100%;
+}
+.contenedor_logo figure{
+  width: 200px;
+}
+.contenedor_boton{
+  display: none;
+  max-width: 1200px;
+  margin: auto;
+ 
+}
+.contenedor_boton a{
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  width: 35px;
+  border-radius: 40px;
+}
+nav{
+  background-color: #800000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+.contenedor_texto h2{
+text-align: center;
+padding: 20px;
+}
+.fondo_texto{
+  background-color: rgb(188, 183, 183);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.fondo_texto article{
+  max-width: 350px;
+}
+.fondo_texto p{
+  padding: 20px;
+  margin: 10px;
+  border: 2px black solid;
+}
+footer{
+  background-color:#CC9900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: #800000;
+}
+/* tablet */
+@media screen and (max-width:768px){
+  .contenedor_boton{
+    display: block;
+   
+  }
+  .todo{
+    position: relative;
+  }
+  nav {
+    background-color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.5s;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .abrirmenu{
+    left: 0;
+  }
+  nav a{
+    color: white;
+    border-bottom: 2px white dotted;
+    padding: 15px;
+    display: block;
+    width: 100%;
+  }
+}
+/* tablet arriba */
+/* movil abajo */
+@media screen and (max-width:480px){
+  .fondo_texto{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+}
+/* movil */
+
